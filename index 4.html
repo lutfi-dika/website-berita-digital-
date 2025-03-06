@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ki Hadjar Dewantara</title>
+    <link
+      rel="website icon"
+      type="jpg"
+      href="Logo Biru Tua Merah Putih Berita Generik Berita Umum.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Josefin+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #fff;
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .navbar {
+      line-height: 5rem;
+      text-align: center;
+      background-color: #ed9e59;
+      margin-bottom: 10%;
+    }
+
+    .navbar h2{
+      color: #050505;
+      font-family: monospace;
+      font-size: 2.7rem;
+    }
+    .navbar p {
+      background-color: whitesmoke;
+      color: black;
+      font-family: monospace;
+      font-size: 1.5rem;
+    }
+
+    #home {
+      width: 80%;
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 12%;
+    }
+
+    .leftHome {
+      width: 500px;
+    }
+
+    .leftHome h3 {
+      color: #de2639;
+      font-size: 1.5rem;
+      margin-bottom: 0.7rem;
+      text-transform: uppercase;
+    }
+
+    .leftHome h2 {
+      color: rgb(26, 25, 25);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .desc {
+      margin-bottom: 1rem;
+      color: rgb(106, 102, 102);
+    }
+
+    .rightHome {
+      width: 50%;
+      margin: 1rem;
+      position: relative;
+    }
+
+    .btn {
+      cursor: pointer;
+      color: #de2639;
+      font-weight: bold;
+      border-radius: 3rem;
+      padding: 0.7rem 1.5rem;
+      text-transform: uppercase;
+      border: 1.5px solid #de2639;
+      background-color: transparent;
+    }
+
+    @media screen and (max-width: 810px) {
+      #home {
+        flex-direction: column-reverse;
+      }
+
+      .rightHome {
+        width: 90%;
+      }
+
+      .leftHome {
+        margin: 0;
+        width: 100%;
+      }
+
+      .leftHome h3 {
+        font-size: 1rem;
+      }
+
+      .leftHome h2 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    .garis-tengah {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      background-color: #575757;
+      margin-bottom: 45px;
+    }
+
+    .teks-tengah {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 0 10px;
+      color: #de2639;
+      font-size: 1.5rem;
+      font-family: cursive;
+    }
+
+    .container {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 1.8rem;
+    }
+
+    .container p {
+      color: black;
+    }
+
+    #aboutUs {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#aboutUs img {
+    width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.content h2 {
+    font-size: 50px;
+    color: #ffca70;
+}
+
+.content h4 {
+    font-size: 20px;
+    color: #050505;
+    margin: 10px 0;
+}
+
+.description {
+    color: #080808;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.btn {
+    font-weight: bold;
+    border: 2px solid #ffca70;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    background-color: #ffca70;
+}
+
+.btn:hover {
+    border: 2px solid #ffca70;
+    background: transparent;
+    color: #ffca70;
+}
+
+@media screen and (max-width: 790px) {
+    #aboutUs img {
+        width: 80%;
+    }
+
+    #aboutUs {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+#about {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 14%;
+}
+
+.leftabout {
+    width: 500px;
+}
+
+.leftabout h3 {
+    color: #de2639;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+}
+
+.leftabout h2 {
+    color: rgb(26, 25, 25);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.desc {
+    margin-bottom: 1rem;
+    color: rgb(106, 102, 102);
+}
+
+.rightabout {
+    width: 50%;
+    margin: 1rem;
+    position: relative;
+}
+
+.btn {
+    cursor: pointer;
+    color: #de2639;
+    font-weight: bold;
+    border-radius: 3rem;
+    padding: .7rem 1.5rem;
+    text-transform: uppercase;
+    border: 1.5px solid #de2639;
+    background-color: transparent;
+}
+
+@media screen and (max-width:810px) {
+    #about {
+        flex-direction: column-reverse;
+    }
+
+    .rightabout {
+        width: 90%;
+    }
+
+    .leftabout{
+        margin: 0;
+        width: 100%;
+    }
+
+    .leftabout h3{
+        font-size: 1rem;
+    }
+
+    .leftabout h2{
+        font-size: 2rem;
+    }
+
+    .btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.garis-tengah-1 {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      background-color: #575757;
+      margin-bottom: 45px;
+    }
+
+    .teks-tengah-1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 0 10px;
+      color: #de2639;
+      font-size: 1.5rem;
+      font-family: cursive;
+    }
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --primaryTextColor: #232e35; /* Untuk title atau judul */
+  --secondaryTextColor: #656d72; /* Untuk text biasa seperti paragraph contohnya */
+
+  --borderColor: #f1f1f1;
+  --lineColor: #d9d9d9; /* untuk line di pre-title */
+
+  --primaryBackgroundColor: #fff;
+  --secondaryBackgroundColor: #fbfbfb;
+  --thirdBackgroundColor: #f5f3fe;
+
+  --primaryIconColor: #7e74f1;
+  --primaryIconColorHover: #5d51e8;
+
+  --sectionPadding: 6rem 0;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--primaryTextColor);
+}
+
+p {
+  font-size: 1rem; /* 16 px */
+  line-height: 1.9rem; /*30.4 px */
+}
+
+p,
+span,
+label,
+input,
+textarea,
+li {
+  color: var(--secondaryTextColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End Preparation */
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+/* Buttons */
+.btn {
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 1.5px solid var(--borderColor);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+/* Titles */
+.section-title {
+  margin: 1rem 0 4rem;
+  font-size: 2rem;
+}
+
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--secondaryTextColor);
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.pre-title::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: var(--lineColor);
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+}
+
+/* Layouts */
+.grid-3 {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; use this first, use code below when its time for explaining responsive design part */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+
+
+.education {
+  display: flex;
+  gap: 1rem;
+}
+
+.education .line {
+  padding: 0 0.7rem;
+}
+
+.education .line div {
+  width: 2px;
+  height: 100%;
+  background: var(--borderColor);
+  position: relative;
+}
+
+.education-info p {
+  margin: 0.6rem 0 1.4rem;
+}
+
+.education-years {
+  margin-bottom: 3rem;
+}
+
+/* The dot on the line */
+.education .line div:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: var(--borderColor);
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+/* Right side of Skills */
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
+.skills-right ul {
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+:root {
+    --text-white: #fff
+}
+
+#footer {
+    background-color: #e65b00;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer h2 {
+    font-size: 2rem;
+    color: var(--text-white);
+}
+
+.footer-description {
+    color: var(--text-white);
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.social ul li {
+    margin: 10px;
+    border: 1px solid var(--text-white);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.social ul li i {
+    font-size: 1.4rem;
+    color: var(--text-white);
+}
+
+.footer-bottom {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: rgb(23, 23, 137);
+    line-height: 35px;
+}
+
+.right a {
+    text-decoration: none;
+    color: var(--text-white);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+    .footer-bottom {
+        justify-content: center;
+    }
+
+    .footer-description {
+        width: 90%;
+    }
+}
+
+
+  </style>
+  <body>
+    <nav class="navbar">
+      <a href="index 1.html">
+
+        <h2 >Berita Digital</h2>
+      </a>
+      <p>Ki Hadjar Dewantara</p>
+    </nav>
+
+    <section id="home">
+      <div class="leftHome">
+        <h3>Berita Digital Pendidikan</h3>
+        <h2>Ki Hadjar Dewantara</h2>
+        <p class="desc">
+          Ki Hadjar Dewantara (1889–1959) adalah seorang tokoh pendidikan
+          Indonesia dan pendiri Taman Siswa, sebuah lembaga pendidikan yang
+          berperan penting dalam pergerakan kemerdekaan Indonesia. Nama aslinya
+          adalah Raden Mas Soewardi Soerjaningrat, tetapi ia menggantinya agar
+          lebih dekat dengan rakyat.
+        </p>
+      </div>
+      <img class="rightHome" src="download (4).jpeg" alt="" />
+    </section>
+
+    <div class="garis-tengah">
+      <span class="teks-tengah">sejarah</span>
+    </div>
+    
+    <section id="aboutUs">
+      <img src="download (4).jpeg" />
+      <div class="content">
+        <!-- <h2>About Us</h2> -->
+        <h4>Digital Berita Pendidikan</h4>
+        <p class="description">
+          Ki Hadjar Dewantara lahir dengan nama Raden Mas Soewardi Soerjaningrat
+          pada 2 Mei 1889 di Yogyakarta. Ia berasal dari keluarga bangsawan
+          Keraton Yogyakarta, sehingga mendapatkan pendidikan yang baik sejak
+          kecil. Ia bersekolah di ELS (Europeesche Lagere School) dan kemudian
+          melanjutkan ke STOVIA (Sekolah Dokter Bumiputra), namun tidak
+          menyelesaikan studinya karena alasan kesehatan.
+        </p>
+        <!-- <button class="btn">Hire Me</button> -->
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="leftabout">
+          <h3>Berita Digital pendidikan </h3>
+          <h2>Ki Hadjar Dewantara </h2>
+          <p class="desc">
+            Selain tertarik pada pendidikan, Ki Hadjar Dewantara juga aktif dalam
+            pergerakan nasional. Ia bergabung dengan organisasi Boedi Oetomo dan
+            menjadi jurnalis yang vokal dalam menentang kebijakan kolonial
+            Belanda. Pada tahun 1913, ia menulis artikel berjudul "Als ik een
+            Nederlander was" (Seandainya Aku Seorang Belanda), yang mengkritik
+            pemerintah kolonial karena memungut pajak dari rakyat pribumi untuk
+            merayakan kemerdekaan Belanda. Tulisan ini menyebabkan ia diasingkan
+            ke Belanda bersama Douwes Dekker dan Tjipto Mangoenkoesoemo.
+
+          </p>
+          <!-- <button class="btn"> free quote </button> -->
+      </div>
+      <img class="rightabout" src="download (3).jpeg">
+  </section>
+
+  <div class="garis-tengah-1">
+    <span class="teks-tengah-1">pendidikan</span>
+  </div>
+
+   <!-- Skills & Education -->
+   <section id="skills">
+    <div class="skills main-container">
+      <h3 class="pre-title">Berita Digital</h3>
+      <h1 class="section-title">pendidikan ki Hadjar Dewantara</h1>
+
+      <div class="skills-grid">
+        <div class="skills-left">
+          <div class="education">
+            <div class="line">
+              <div></div>
+            </div>
+            <div class="education-info">
+              <h4 class="education-title">Sekolah Dasar ELS (Europeesche Lagere School) </h4>
+              <p>Ini adalah sekolah dasar berbahasa Belanda yang diperuntukkan bagi anak-anak Eropa dan pribumi dari kalangan elite.</p>
+              <!-- <h4 class="education-years">2019 - 2023</h4> -->
+            </div>
+          </div>
+          <div class="education">
+            <div class="line">
+              <div></div>
+            </div>
+            <div class="education-info">
+              <h4 class="education-title">STOVIA (School tot Opleiding van Inlandsche Artsen)</h4>
+              <p>Sekolah pendidikan dokter untuk pribumi di Batavia (sekarang Jakarta).</p>
+              <!-- <h4 class="education-years">2019 - 2023</h4> -->
+            </div>
+          </div>
+          <div class="education">
+            <div class="line">
+              <div></div>
+            </div>
+            <div class="education-info">
+              <h4 class="education-title">Kweekschool (Sekolah Guru)</h4>
+              <!-- <p>Master's Degree - Software Engineering</p>
+              <h4 class="education-years">2019 - 2023</h4> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="skills-right">
+          <p>
+            For 5+ years, I have been continuously learning in the field of
+            front-end and experimenting with new technologies and frameworks,
+            and here you can see a summary of my skills. Field of front-end
+            and experimenting with new technologies.
+          </p>
+
+          <div class="skills-list">
+            <ul>
+              <li>React JS</li>
+              <li>Node JS</li>
+              <li>MongoDB</li>
+              <li>HTML</li>
+              <li>Vue JS</li>
+            </ul>
+
+            <ul>
+              <li>CSS</li>
+              <li>Typescript</li>
+              <li>Next JS</li>
+              <li>GraphQl</li>
+              <li>Angular JS</li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Skills & Education  -->
+
+  <main id="main-section"> </main>
+  <footer id="footer">
+      <h2>  Berita Digital</h2>
+      <p class="footer-description">
+         Berita Digital adalah tempat untuk mencari informasi atau berita secara online
+         disinin tempat mendapatkan informasi yang terbaik dan terpecaya 
+
+      </p>
+      <div class="social">
+          <ul>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-telegram"></i></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <span class="left">
+              Copyright &copy; 2021-23 <a href="#">Berita Digital</a>
+          </span>
+          <!-- <div class="right">
+              <a href="#"> Home </a>
+              <a href="#"> About </a>
+              <a href="#"> Contact </a>
+              <a href="#"> Blog </a>
+          </div> -->
+      </div>
+  </footer>
+
+  </body>
+</html>
