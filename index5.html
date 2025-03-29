@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raden Ajeng Kartini</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #fff;
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .navbar a {
+      text-decoration: none;
+    }
+
+    .navbar {
+      line-height: 5rem;
+      text-align: center;
+      background-color: #ed9e59;
+      margin-bottom: 10%;
+    }
+
+    .navbar h3 {
+      color: black;
+      font-family: sans-serif;
+      font-size: 1.9rem;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .navbar P {
+      background-color: whitesmoke;
+      text-align: center;
+      justify-content: center;
+      color: black;
+      font-family: sans-serif;
+      font-size: 1.6rem;
+    }
+
+    #home {
+      width: 80%;
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .leftHome {
+      width: 500px;
+    }
+
+    .leftHome h3 {
+      color: #de2639;
+      font-size: 1.5rem;
+      margin-bottom: 0.7rem;
+      text-transform: uppercase;
+    }
+
+    .leftHome h2 {
+      color: rgb(26, 25, 25);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .desc {
+      margin-bottom: 1rem;
+      color: rgb(106, 102, 102);
+    }
+
+    .rightHome {
+      width: 50%;
+      margin: 1rem;
+      position: relative;
+    }
+
+    .btn {
+      cursor: pointer;
+      color: #de2639;
+      font-weight: bold;
+      border-radius: 3rem;
+      padding: 0.7rem 1.5rem;
+      text-transform: uppercase;
+      border: 1.5px solid #de2639;
+      background-color: transparent;
+    }
+
+    @media screen and (max-width: 810px) {
+      #home {
+        flex-direction: column-reverse;
+      }
+
+      .rightHome {
+        width: 90%;
+      }
+
+      .leftHome {
+        margin: 0;
+        width: 100%;
+      }
+
+      .leftHome h3 {
+        font-size: 1rem;
+      }
+
+      .leftHome h2 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    .garis-tengah {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      background-color: #575757;
+      margin-bottom: 45px;
+    }
+
+    .teks-tengah {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 0 10px;
+      color: #de2639;
+      font-size: 1.5rem;
+      font-family: cursive;
+    }
+
+    #aboutUs {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #aboutUs img {
+      width: 400px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .content {
+      margin: 20px 0;
+    }
+
+    .content h2 {
+      font-size: 50px;
+      color: #ffca70;
+    }
+
+    .content h4 {
+      font-size: 20px;
+      color: #010101;
+      margin: 10px 0;
+    }
+
+    .description {
+      color: #030303;
+      margin: 20px 0;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 100;
+    }
+
+    .btn {
+      font-weight: bold;
+      border: 2px solid #ffca70;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: all 0.4s;
+      background-color: #ffca70;
+    }
+
+    .btn:hover {
+      border: 2px solid #ffca70;
+      background: transparent;
+      color: #ffca70;
+    }
+
+    @media screen and (max-width: 790px) {
+      #aboutUs img {
+        width: 80%;
+      }
+
+      #aboutUs {
+        grid-template-columns: 1fr;
+        place-items: center;
+      }
+    }
+
+    #about {
+      width: 80%;
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .leftabout {
+      width: 500px;
+    }
+
+    .leftabout h3 {
+      color: #de2639;
+      font-size: 1.5rem;
+      margin-bottom: 0.7rem;
+      text-transform: uppercase;
+    }
+
+    .leftabout h2 {
+      color: rgb(26, 25, 25);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .desc {
+      margin-bottom: 1rem;
+      color: rgb(106, 102, 102);
+    }
+
+    .rightabout {
+      width: 50%;
+      margin: 1rem;
+      position: relative;
+    }
+
+    .btn {
+      cursor: pointer;
+      color: #de2639;
+      font-weight: bold;
+      border-radius: 3rem;
+      padding: 0.7rem 1.5rem;
+      text-transform: uppercase;
+      border: 1.5px solid #de2639;
+      background-color: transparent;
+    }
+
+    @media screen and (max-width: 810px) {
+      #about {
+        flex-direction: column-reverse;
+      }
+
+      .rightabout {
+        width: 90%;
+      }
+
+      .leftabout {
+        margin: 0;
+        width: 100%;
+      }
+
+      .leftabout h3 {
+        font-size: 1rem;
+      }
+
+      .leftabout h2 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    #aboutUs-1 {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#aboutUs-1 img {
+    width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.content-1 {
+    margin: 20px 0;
+}
+
+.content-1 h2 {
+    font-size: 50px;
+    color: #ffca70;
+}
+
+.content-1 h4 {
+    font-size: 20px;
+    color: #0b0b0b;
+    margin: 10px 0;
+}
+
+.description-1 {
+    color: #101010;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.btn {
+    font-weight: bold;
+    border: 2px solid #ffca70;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    background-color: #ffca70;
+}
+
+.btn:hover {
+    border: 2px solid #ffca70;
+    background: transparent;
+    color: #ffca70;
+}
+
+@media screen and (max-width: 790px) {
+    #aboutUs-1 img {
+        width: 80%;
+    }
+
+    #aboutUs-1 {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+:root {
+    --text-white: #fff
+}
+
+#footer {
+    background-color: #e65b00;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer h2 {
+    font-size: 2rem;
+    color: var(--text-white);
+}
+
+.footer-description {
+    color: var(--text-white);
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.social ul li {
+    margin: 10px;
+    border: 1px solid var(--text-white);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.social ul li i {
+    font-size: 1.4rem;
+    color: var(--text-white);
+}
+
+.footer-bottom {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: rgb(23, 23, 137);
+    line-height: 35px;
+}
+
+.right a {
+    text-decoration: none;
+    color: var(--text-white);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+    .footer-bottom {
+        justify-content: center;
+    }
+
+    .footer-description {
+        width: 90%;
+    }
+}
+
+
+   
+  </style>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">
+        <h3>Berita Digital</h3>
+      </a>
+      <p>Raden Ajeng Kartini</p>
+    </nav>
+    <section id="home">
+      <div class="leftHome">
+        <h3>Berita Digital</h3>
+        <h2>Raden Ajeng Kartini</h2>
+        <p class="desc">
+          Raden Ajeng Kartini (1879–1904) adalah seorang pahlawan nasional
+          Indonesia yang dikenal sebagai pelopor emansipasi perempuan. Ia
+          berasal dari keluarga bangsawan Jawa dan memiliki pemikiran maju
+          tentang pendidikan serta kesetaraan gender.
+        </p>
+      </div>
+      <img class="rightHome" src="download.webp" alt="" />
+    </section>
+
+    <div class="garis-tengah">
+      <span class="teks-tengah">sejarah</span>
+    </div>
+    <section id="aboutUs">
+      <img src="download.webp" alt="computer user" />
+      <div class="content">
+        <h4>Raden Ajeng Kartini</h4>
+        <p class="description">
+          Raden Ajeng Kartini lahir pada 21 April 1879 di Jepara, Jawa Tengah.
+          Ia berasal dari keluarga bangsawan Jawa. Ayahnya, Raden Mas Adipati
+          Ario Sosroningrat, adalah Bupati Jepara, sementara ibunya, M.A.
+          Ngasirah, adalah seorang perempuan dari kalangan rakyat biasa. Sebagai
+          anak bangsawan, Kartini memiliki hak untuk bersekolah. Ia belajar di
+          ELS (Europeesche Lagere School), sekolah dasar berbahasa Belanda. Di
+          sini, Kartini mulai mengenal bahasa Belanda, yang nantinya membantunya
+          membaca buku dan berkomunikasi dengan teman-teman di Eropa.
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="leftabout">
+        <!-- <h3>Berita Digital</h3> -->
+        <h2>Raden Ajeng Kartini</h2>
+        <p class="desc">
+          Sesuai adat saat itu, perempuan bangsawan harus dipingit setelah usia
+          12 tahun hingga menikah. Ini berarti Kartini harus tinggal di rumah
+          dan tidak bisa melanjutkan sekolah. Namun, ia tetap belajar secara
+          mandiri melalui buku-buku, majalah, dan surat kabar dari Eropa.
+        </p>
+      </div>
+      <img class="rightabout" src="download.webp" alt="" />
+    </section>
+
+    <section id="aboutUs-1">
+    <img src="download.webp" alt="computer user">
+    <div class="content-1">
+        <h4> Raden Ajeng Kartini</h4>
+        <p class="description-1">
+            Kartini sering menulis surat kepada sahabat-sahabatnya di
+             Belanda, seperti Estell “Stella” Zeehandelaar. Dalam surat-suratnya,
+              ia menyampaikan gagasan tentang pentingnya pendidikan bagi perempuan dan 
+              kesetaraan gender.
+
+Setelah menikah dengan Raden Adipati Joyodiningrat pada tahun 1903, ia
+ diberi kebebasan untuk mendirikan sekolah bagi perempuan di Rembang.
+  Ini menjadi langkah awal perjuangannya dalam dunia pendidikan.
+        </p>
+       
+    </section>
+
+    <main id="main-section"> </main>
+    <footer id="footer">
+        <h2>  Berita Digital</h2>
+        <p class="footer-description">
+           Berita Digital adalah tempat untuk mencari informasi atau berita secara online
+           disinin tempat mendapatkan informasi yang terbaik dan terpecaya 
+  
+        </p>
+        <div class="social">
+            <ul>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-telegram"></i></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <span class="left">
+                Copyright &copy; 2021-23 <a href="#">Berita Digital</a>
+            </span>
+            <!-- <div class="right">
+                <a href="#"> Home </a>
+                <a href="#"> About </a>
+                <a href="#"> Contact </a>
+                <a href="#"> Blog </a>
+            </div> -->
+        </div>
+    </footer>
+  
+   
+  </body>
+</html>

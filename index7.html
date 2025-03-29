@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KH Ahmad Dahlan</title>
+    <link
+      rel="website icon"
+      type="jpg"
+      href="Logo Biru Tua Merah Putih Berita Generik Berita Umum.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #fff;
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .navbar {
+      line-height: 5rem;
+      text-align: center;
+      background-color: #ed9e59;
+      margin-bottom: 10%;
+    }
+
+    .navbar a {
+      text-decoration: none;
+    }
+
+    .navbar h3 {
+      font-family: serif;
+      font-size: 2rem;
+      text-align: center;
+      justify-content: center;
+      color: black;
+    }
+
+    .navbar p {
+      background-color: whitesmoke;
+      text-align: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      color: black;
+      font-size: 1.7rem;
+    }
+
+    #home {
+      width: 80%;
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 11%;
+    }
+
+    .leftHome {
+      width: 500px;
+    }
+
+    .leftHome h3 {
+      color: #de2639;
+      font-size: 1.5rem;
+      margin-bottom: 0.7rem;
+      text-transform: uppercase;
+    }
+
+    .leftHome h2 {
+      color: rgb(26, 25, 25);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .desc {
+      margin-bottom: 1rem;
+      color: rgb(106, 102, 102);
+    }
+
+    .rightHome {
+      width: 50%;
+      margin: 1rem;
+      position: relative;
+    }
+
+    .btn {
+      cursor: pointer;
+      color: #de2639;
+      font-weight: bold;
+      border-radius: 3rem;
+      padding: 0.7rem 1.5rem;
+      text-transform: uppercase;
+      border: 1.5px solid #de2639;
+      background-color: transparent;
+    }
+
+    @media screen and (max-width: 810px) {
+      #home {
+        flex-direction: column-reverse;
+      }
+
+      .rightHome {
+        width: 90%;
+      }
+
+      .leftHome {
+        margin: 0;
+        width: 100%;
+      }
+
+      .leftHome h3 {
+        font-size: 1rem;
+      }
+
+      .leftHome h2 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    .garis-tengah {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      background-color: #575757;
+      margin-bottom: 45px;
+    }
+
+    .teks-tengah {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 0 10px;
+      color: #de2639;
+      font-size: 1.5rem;
+      font-family: cursive;
+    }
+
+    .aboutUs-1 {
+      margin-bottom: 13%;
+    }
+    .card-container {
+      background-color: rgb(31, 31, 32);
+      color: rgb(42, 41, 41);
+      padding: 2rem;
+      width: 20rem;
+      margin: 0.5rem;
+      border-radius: 0.4rem;
+    }
+
+    .cart-top-navigation {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .cart-top-navigation li,
+    .cart-top-navigation ul {
+      list-style: none;
+      font-size: 1.2rem;
+    }
+
+    .cart-top-navigation ul i {
+      margin-left: 10px;
+    }
+
+    .user-image {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
+
+    /* .user-image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 108%;
+     
+    } */
+
+    .user-name,
+    .about-user {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: black;
+    }
+
+    .user-name {
+      font-size: 1.9rem;
+      color: red;
+    }
+
+    #aboutUs {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 14%;
+    }
+
+    #aboutUs img {
+      width: 400px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .content {
+      margin: 20px 0;
+    }
+
+    .content h2 {
+      font-size: 50px;
+      color: #ffca70;
+    }
+
+    .content h4 {
+      font-size: 20px;
+      color: #fff;
+      margin: 10px 0;
+    }
+
+    .description {
+      color: #131313;
+      margin: 20px 0;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 100;
+    }
+
+    .btn {
+      font-weight: bold;
+      border: 2px solid #ffca70;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: all 0.4s;
+      background-color: #ffca70;
+    }
+
+    .btn:hover {
+      border: 2px solid #ffca70;
+      background: transparent;
+      color: #ffca70;
+    }
+
+    @media screen and (max-width: 790px) {
+      #aboutUs img {
+        width: 80%;
+      }
+
+      #aboutUs {
+        grid-template-columns: 1fr;
+        place-items: center;
+      }
+    }
+
+    #about-2 {
+      width: 80%;
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .leftabout-2 {
+      width: 500px;
+    }
+
+    .leftabout-2 h3 {
+      color: #de2639;
+      font-size: 1.5rem;
+      margin-bottom: 0.7rem;
+      text-transform: uppercase;
+    }
+
+    .leftabout-2 h2 {
+      color: rgb(26, 25, 25);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .desc {
+      margin-bottom: 1rem;
+      color: rgb(106, 102, 102);
+    }
+
+    .rightabout-2 {
+      width: 50%;
+      margin: 1rem;
+      position: relative;
+    }
+
+    .btn {
+      cursor: pointer;
+      color: #de2639;
+      font-weight: bold;
+      border-radius: 3rem;
+      padding: 0.7rem 1.5rem;
+      text-transform: uppercase;
+      border: 1.5px solid #de2639;
+      background-color: transparent;
+    }
+
+    @media screen and (max-width: 810px) {
+      #home {
+        flex-direction: column-reverse;
+      }
+
+      .rightHome {
+        width: 90%;
+      }
+
+      .leftHome {
+        margin: 0;
+        width: 100%;
+      }
+
+      .leftHome h3 {
+        font-size: 1rem;
+      }
+
+      .leftHome h2 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    :root {
+      --text-white: #fff;
+    }
+
+    #footer {
+      background-color: #e65b00;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    #footer h2 {
+      font-size: 2rem;
+      color: var(--text-white);
+    }
+
+    .footer-description {
+      color: var(--text-white);
+      width: 60%;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .social ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .social ul li {
+      margin: 10px;
+      border: 1px solid var(--text-white);
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 7px;
+    }
+
+    .social ul li i {
+      font-size: 1.4rem;
+      color: var(--text-white);
+    }
+
+    .footer-bottom {
+      display: flex;
+      margin-top: 1rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+    }
+
+    .footer-bottom a {
+      text-decoration: none;
+      color: rgb(23, 23, 137);
+      line-height: 35px;
+    }
+
+    .right a {
+      text-decoration: none;
+      color: var(--text-white);
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 560px) {
+      .footer-bottom {
+        justify-content: center;
+      }
+
+      .footer-description {
+        width: 90%;
+      }
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">
+        <h3>Digital Pendidikan</h3>
+      </a>
+      <p>KH Ahmad Dahlan</p>
+    </nav>
+
+    <section id="home">
+      <div class="leftHome">
+        <h3>Berita Digital</h3>
+        <h2>KH Ahmad Dahlan</h2>
+        <p class="desc">
+          KH Ahmad Dahlan (1868–1923) adalah seorang ulama, pendidik, dan tokoh
+          pembaharu Islam di Indonesia. Ia dikenal sebagai pendiri Muhammadiyah,
+          sebuah organisasi Islam yang berfokus pada pendidikan, sosial, dan
+          dakwah.
+        </p>
+        <!-- <button class="btn">free quote</button> -->
+      </div>
+      <img class="rightHome" src="download (2).webp" alt="" />
+    </section>
+
+    <div class="garis-tengah">
+      <span class="teks-tengah">sejarah</span>
+    </div>
+
+
+
+    <section id="aboutUs">
+      <img src="download (2).webp" alt="computer user" />
+      <div class="content">
+        <!-- <h2>About Us</h2>
+            <h4> Developer & Designer </h4> -->
+        <p class="description">
+          KH Ahmad Dahlan lahir dengan nama Muhammad Darwis di Yogyakarta pada
+          tahun 1868. Ia berasal dari keluarga ulama, ayahnya adalah seorang
+          imam Masjid Gedhe Kauman Yogyakarta. Pada usia muda, ia belajar agama
+          di Mekah selama beberapa tahun dan terinspirasi oleh gerakan pembaruan
+          Islam yang berkembang di sana.
+        </p>
+      </div>
+    </section>
+
+    <section id="about-2">
+      <div class="leftabout-2">
+        <!-- <h3> Digital media agency </h3> -->
+        <!-- <h2> We Boost Your Website Traffic </h2> -->
+        <p class="desc">
+          Atas jasanya dalam memperjuangkan pendidikan perempuan, Dewi Sartika
+          mendapat berbagai penghargaan dan pengakuan. Pada tahun 1966,
+          pemerintah Indonesia menetapkannya sebagai Pahlawan Nasional atas
+          dedikasinya dalam dunia pendidikan. Saat terjadi agresi militer
+          Belanda pada tahun 1946, Dewi Sartika harus mengungsi ke Tasikmalaya.
+          Ia wafat pada 11 September 1947, dan kemudian dimakamkan di Kompleks
+          Pemakaman Bupati Bandung di Jalan Karang Anyar, Bandung.
+        </p>
+      </div>
+      <img class="rightabout-2" src="download (2).webp" alt="" />
+    </section>
+
+    <main id="main-section"></main>
+    <footer id="footer">
+      <h2>Berita Digital</h2>
+      <p class="footer-description">
+        Setelah kembali ke Indonesia, KH Ahmad Dahlan melihat bahwa praktik
+        Islam di masyarakat masih banyak dipengaruhi oleh takhayul, bid’ah, dan
+        khurafat. Ia kemudian mendirikan Muhammadiyah pada 18 November 1912
+        dengan tujuan:
+      </p>
+      <div class="social">
+        <ul>
+          <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-telegram"></i>
+              </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span class="left">
+          Copyright &copy; 2021-23 <a href="#">Berita Digital</a>
+        </span>
+        <!-- <div class="right">
+              <a href="#"> Home </a>
+              <a href="#"> About </a>
+              <a href="#"> Contact </a>
+              <a href="#"> Blog </a>
+          </div> -->
+      </div>
+    </footer>
+  </body>
+</html>

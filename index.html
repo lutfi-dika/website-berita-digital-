@@ -2,11 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beerita Digital</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Berita Digital</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -17,361 +14,731 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style 1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="website icon" type="jpg" href="Logo Biru Tua Merah Putih Berita Generik Berita Umum.png">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   </head>
+  
   <body>
     <nav class="navbar">
-      <h2>Berita Digital</h2>
-    </nav>
-    <section id="home">
-      <div class="leftHome">
-        <h3>Berita Digital</h3>
-        <h2>Pendidikan</h2>
-        <p class="desc">
-          Pendidikan adalah proses pembelajaran yang dilakukan secara sadar dan
-          terencana untuk mengembangkan potensi peserta didik. Pendidikan dapat
-          dilakukan melalui pengajaran, pelatihan, dan penelitian.
-          <!-- <button class="btn"> free quote </button> -->
-        </p>
+      <div class="logo">
+        <a href="index.php">Berita Digital</a>
       </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#Tentang">about</a></li>
+        <li  class="dropdown"><a href="#services" class="dropbtn">Sejarah</a>
+          <div class="dropdown-content">
+            <a href="#">ki Hadjar Dewantara</a>
+            <a href="#">Raden Ajeng Kartini</a>
+            <a href="#">Dewi Sartika</a>
+            <a href="#">KH Ahmad Dahlan</a>
+            <a href="#">KH Hasyim Asy'ari</a>
+        </div>
+        </li>
 
-      <img class="rightHome" src="download.jpeg" alt="" />
+        <li><a href="#Dampak">Dampak</a></li>
+      </ul>
+    </nav>
+    <section class="promo-banner">
+      <p>Berita Digital Pendidikan</p>
     </section>
 
-    <!--   
-    <div class="text-center py-10">
-        <div class="flex items-center justify-center">
-            <div class="w-1/2 border-t border-gray-500"></div>
-            <div class="px-4 text-red-600 font-bold">IKUTI INSTAGRAM KAMI</div>
-            <div class="w-1/2 border-t border-gray-500"></div>
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+<div class="parallax">
+  <section id="home" class="home">
+    <h3 class="text-xl mb-4"> welcome to website <br> <br> <span>Berita Digital </span></h3>
+  </section>
+</div>
+
+
+
+    <div class="garis-tengah">
+      <!-- <span class="teks-tengah">Pendidikan itu apasih???</span> -->
+    </div>
+    <section id="Tentang" class="Tentang">
+    <div class="hero">
+      <div class="hero-overlay">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Berita Pendidikan Terkini</h1>
+            <p>Dapatkan informasi terbaru seputar dunia pendidikan Indonesia</p>
+          </div>
         </div>
-    </div> -->
+      </div>
+    </div>
+    
+    <!--================== Home Section Starts from Here ==================-->
 
     <section id="aboutUs">
-      <img src="download (1).jpeg" alt="online shop" />
+      <img src="download.jpeg" alt="computer user" />
       <div class="content">
-        <h2>Digital Pendidikan</h2>
-        <!-- <h4></h4> -->
+        <h2>Pendidikan</h2>
+        <!-- <h4> Developer & Designer </h4> -->
         <p class="description">
-          Pengertian landasan filosofi Pendidikan adalah upaya mengembangkan
-          potensi-potensi manusiawi peserta didikbaik potensi fisik potensi
-          cipta, rasa, maupun karsanya, agar potensi itu menjadi nyata dan dapat
-          berfungsi dalam perjalanan hidupnya. Pendidikan dapat dilakukan untuk
-          mengubah sikap dan perilaku seseorang atau sekelompok orang.
+          Pendidikan adalah proses pembelajaran yang bertujuan untuk
+          mengembangkan pengetahuan, keterampilan, nilai, dan karakter
+          seseorang. Pendidikan dapat berlangsung secara formal (di sekolah,
+          universitas), nonformal (kursus, pelatihan), maupun informal (belajar
+          dari pengalaman sehari-hari).
         </p>
         <!-- <button class="btn">Hire Me</button> -->
       </div>
     </section>
 
-    <div class="text-center py-10">
-      <div class="flex items-center justify-center">
-        <div class="w-2/3 border-t border-gray-500"></div>
-        <div class="px-4 text-red-600 font-bold">Tujuan Pendidikan</div>
-        <div class="w-2/3 border-t border-gray-500"></div>
-      </div>
-    </div>
-
-    <!-- <section id="Tujuan" class="Tujuan">
-      <div class="container">
-        <h3>Tujuan Pendidikan</h3>
-        <p>
-          Tujuan pendidikan adalah untuk mengembangkan potensi peserta didik
-          menjadi manusia yang beriman, berakhlak mulia, sehat, berilmu, cakap,
-          kreatif, mandiri, dan bertanggung jawab.Tujuan pendidikan dibagi 2 yaitu menurut 
-          Undang-Undang dan menurut ki Hadjar Dewantara
-        </p>
-      </div>
-   
-    </section> -->
-    <section id="Tujuan" class="Tujuan">
-      <main>
-        <div class="bd-masthead mb-3" id="content">
-          <div class="container-xxl bd-gutter">
-            <div class="col-md-8 mx-auto text-center">
-              <img
-                src="download (2).jpeg"
-                alt="online shop"
-                class="gambar d-none d-sm-block mx-auto mb-3"
-              />
-
-              <div class="container">
-                <h1 class="mb-3 fw-semibold lh-1">Tujuan Pendidikan</h1>
-
-                <p class="lead mb-4">
-                  Tujuan pendidikan adalah untuk mengembangkan potensi peserta
-                  didik menjadi manusia yang beriman, berakhlak mulia, sehat,
-                  berilmu, cakap, kreatif, mandiri, dan bertanggung jawab.Tujuan
-                  pendidikan dibagi 2 yaitu menurut Undang-Undang dan menurut ki
-                  Hadjar Dewantara
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <!-- User Dashboard Starts from Here -->
-      <div class="dashboard">
-        <h2 class="heading">Tujuan Pendidikan Menerut Undang-Undang</h2>
-        <div class="color-box">
-          <div class="box skyblue">
-            <p>Membentuk manusia yang berilmu</p>
-          </div>
-          <div class="box yellow">
-            <p>Membentuk manusia yang sehat</p>
-          </div>
-          <div class="box purple">
-            <p>Membentuk manusia yang mandiri</p>
-          </div>
-          <div class="box red">
-            <p>Membentuk manusia yang demokratis dan bertanggung jawab</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- tujuan ke 2 -->
-
-      <div class="dashboard 2">
-        <h2 class="heading">Tujuan Pendidikan Menerut ki Hadjar Dewantara</h2>
-        <div class="color-box">
-          <div class="box skyblue">
-            <p>Pendidikan harus memenuhi kebutuhan tumbuh kembang anak.</p>
-          </div>
-          <div class="box yellow">
-            <p>
-              Pendidikan harus membimbing peserta didik sesuai dengan kemampuan
-              alamiahnya.
-            </p>
-          </div>
-          <div class="box purple">
-            <p>Pendidikan harus berpihak kepada anak.</p>
-          </div>
-          <div class="box red">
-            <p>
-              Pendidikan harus menuju ke arah kebahagiaan batin serta
-              keselamatan hidup lahir.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="text-center py-10">
-      <div class="flex items-center justify-center">
-        <div class="w-2/3 border-t border-gray-500"></div>
-        <div class="px-4 text-red-600 font-bold">Ki Hadjar Dewantara</div>
-        <div class="w-2/3 border-t border-gray-500"></div>
-      </div>
-    </div>
-
-    <section id="about1" class="about1">
-      <div class="leftHome">
-        <h3>Berita Digital</h3>
-        <h2>ki Hadjar Dewantara</h2>
+    <section id="about">
+      <div class="leftabout">
+        <h2>Tujuan Pendidikan</h2>
         <p class="desc">
-          Ki Hadjar Dewantara adalah Pahlawan Nasional khususnya di Pendidikan,
-          yang memperjuangkan kesetaraan dan kesempatan pendidikan bagi warga
-          pribumi (Indonesia) yang kala itu dijajah Kolonial Belanda.
-          Perjuangannya tidak kenal lelah, dan konsisten sepanjang hayatnya,
-          dari masa muda.Ki Hajar Dewantara memang tersohor sebagai pahlawan
-          pendidikan Indonesia, bahkan ia mendapat julukan sebagai Bapak
-          Pendidikan
+          Tujuan pendidikan secara umum adalah untuk mengembangkan potensi
+          individu dan menciptakan masyarakat yang berpengetahuan, berkarakter,
+          dan siap menghadapi tantangan kehidupan. Berikut beberapa tujuan
+          pendidikan yang lebih spesifik:
+        </p>
+        <ul>
+          <li>1.Pengembangan Individu</li>
+          <li>2.Mempersiapkan Kehidupan Sosial</li>
+          <li>3.Mempersiapkan Karier dan Kehidupan Ekonomi</li>
+          <li>4.Mencerdaskan Bangsa</li>
+        </ul>
+      </div>
+      <img
+        class="rightabout"
+        src="15b2e27ffb437ac1eaadac0418262b08.jpg"
+        alt=""
+      />
+    </section>
+   
+   <section class="benefit" id="manfaat">
+    <h3>Manfaat Pendidikan</h3>
+    <main>
+      <div class="bd-masthead mb-3" id="content">
+    <div class="container-xxl bd-gutter">
+      <div class="col-md-8 mx-auto text-center">
+       
+        <!-- <img src="/docs/5.3/assets/brand/bootstrap-logo-shadow.png" width="200" height="165" alt="Bootstrap" class="d-none d-sm-block mx-auto mb-3"> -->
+       
+        <p class="lead mb-4">
+          Manfaat pendidikan sangat luas dan berdampak pada individu serta masyarakat. Berikut beberapa manfaat utama pendidikan:
+        </p>
+        <div class="d-flex flex-column flex-lg-row align-items-md-stretch justify-content-md-center gap-3 mb-4">
+          <div class="d-inline-block v-align-middle fs-5">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+  <div class="reviewSection">
+
+    <!-- Clients Review-1 Section Starts from Here  -->
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="./client.png" alt="">
+                    <span>Berita Digital</span>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">
+                  Mengurangi Kemiskinan
+                  </p>
+            </article>
+        </div>
+
+    <!-- Clients Review-2 Section Starts from Here  -->
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="./client.png" alt="">
+                    <span>Berita Digital</span>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">
+                  Menambah Pengetahuan 
+                </p>  
+              </article>
+           </div>
+
+    <!-- Clients Review-3 Section Starts from Here  -->
+        <div class="reviewItem">
+            <div class="top">
+                <div class="clientImage">
+                    <img src="./client.png" alt="">
+                    <span>Berita Digital</span>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">
+                  Meningkatkan Peluang Karier
+                  </p>
+            </article>
+        </div>
+
+ <!-- Clients Review-4 Section Starts from Here  -->
+ <div class="reviewItem">
+  <div class="top">
+      <div class="clientImage">
+          <img src="./client.png" alt="">
+          <span>Berita Digital</span>
+      </div>
+      <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+      </ul>
+  </div>
+  <article>
+      <p class="review">
+        Mendorong Inovasi dan Kemajuan Teknologi 
+        </p>
+  </article>
+</div>
+
+<!-- Clients Review-5 Section Starts from Here  -->
+<div class="reviewItem">
+  <div class="top">
+      <div class="clientImage">
+          <img src="" alt="">
+          <span>Berita Digital</span>
+      </div>
+      <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+      </ul>
+  </div>
+  <article>
+      <p class="review">
+        Membantu Berpikir Kritis
+        </p>
+  </article>
+</div>
+
+
+
+<!-- Clients Review-6 Section Starts from Here  -->
+<div class="reviewItem">
+  <div class="top">
+      <div class="clientImage">
+          <img src="./client.png" alt="">
+          <span>Berita Digital</span>
+      </div>
+      <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+      </ul>
+  </div>
+  <article>
+      <p class="review">
+        Meningkatkan Kesadaran Kesehatan
+        </p>
+  </article>
+</div>
+
+
+<!-- Clients Review-7 Section Starts from Here  -->
+<div class="reviewItem">
+  <div class="top">
+      <div class="clientImage">
+          <img src="./client.png" alt="">
+          <span>Berita Digital</span>
+      </div>
+      <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+      </ul>
+  </div>
+  <article>
+      <p class="review">
+        Mengurangi Tingkat Kejahatan 
+        </p>
+  </article>
+</div>
+
+<!-- Clients Review-6 Section Starts from Here  -->
+<div class="reviewItem">
+  <div class="top">
+      <div class="clientImage">
+          <img src="./client.png" alt="">
+          <span>Berita Digital</span>
+      </div>
+      <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+      </ul>
+  </div>
+  <article>
+      <p class="review">
+        Menjaga Lingkungan Hidup
+        </p>
+  </article>
+</div>
+  
+      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+</div>
+</section>
+
+<div class="garis-tengah-3">
+  <!-- <span class="teks-tengah-1">Pahlawan-Pahlawan pendidikan</span> -->
+</div>
+
+<section class="container-about">
+  <div class="bg-white-900 rounded-lg p-9 w-full max-w-4xl">
+    <div class="flex flex-col md:flex-row items-center  md:items-start">
+     <img alt="A school building with a flagpole in front" class="rounded-lg mb-4 md:mb-0 md:mr-6" height="200" src="4c6217bcdd2ff83ad03de05098b47946.jpg" width="300"/>
+     <div class="flex-1">
+      <div class="bg-orange-500 text-white rounded-lg p-4 mb-4">
+       <h2 class="text-xl font-bold mb-2">
+        Pahlawan Pendidikan
+       </h2>
+       <p>
+        Pahlawan pendidikan adalah individu yang berjasa dalam dunia 
+        pendidikan, baik melalui pengajaran, pemikiran, kebijakan,
+         atau perjuangan dalam mencerdaskan bangsa. Mereka bisa 
+         berupa guru, dosen, tokoh pendidikan, atau siapa saja 
+         yang berkontribusi besar dalam meningkatkan kualitas
+          pendidikan.
+       </p>
+      </div>
+      <div class="bg-orange-500 text-white rounded-lg p-4">
+       <h2 class="text-xl font-bold mb-2">
+        Macam-Macam Pahlawan Pendidikan
+       </h2>
+       <ol class="list-decimal list-inside">
+        <li>
+        Ki Hadjar Dewantara
+        </li>
+        <li>
+        Raden Ajeng Kartini
+        </li>
+        <li>
+        Dewi Sartika
+        </li>
+        <li>
+          KH Ahmad Dahlan
+        </li>
+        <li>
+          KH Hasyim Asy'ari
+        </li>
+       </ol>
+      </div>
+     </div>
+    </div>
+   </div>
+</section>
+
+
+<div class="garis-tengah-1">
+  <!-- <span class="teks-tengah-1">Pahlawan-Pahlawan pendidikan</span> -->
+</div>
+
+<div class="parallax-1">
+ 
+    <div class="main-container">
+        <h2>pahlawan pendidikan</h2>
+        <div class="cards">
+            <div class="card card1">
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+                <p class="desc">ki Hadjar Dewantara</p>
+                <p class="read-more">
+                    <a class="readMore" href="index1.html">Read More <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+
+            <div class="card card2">
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+                <p class="desc">Raden Ajeng Kartini</p>
+                <p class="read-more">
+                    <a class="readMore" href="index5.html">Read More <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+
+            <div class="card card3">
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+                <p class="desc">Dewi Sartika</p>
+                <p class="read-more">
+                    <a class="readMore" href="index6.html">Read More <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+            
+            <div class="card card4">
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+                <p class="desc">KH Ahmad Dahlan</p>
+                <p class="read-more">
+                    <a class="readMore" href="index7.html">Read More <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+
+            <div class="card card5">
+              <div>
+                  <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+              </div>
+              <p class="close"><i class="fa-solid fa-xmark"></i></p>
+              <p class="desc">KH Hasyim Asy'ari</p>
+              <p class="read-more">
+                  <a class="readMore" href="index8.html">Read More <i class="fas fa-arrow-right"></i></a>
+              </p>
+          </div>
+          </div>
+
+
+        </div>
+     </div>
+    </div>
+
+</div>
+   
+<div class="garis-tengah-2">
+  <!-- <span class="teks-tengah-1">Pahlawan-Pahlawan pendidikan</span> -->
+</div>
+
+<section class="container-about-1">
+
+
+  <div class="bg-white-900 rounded-lg p-9 w-full max-w-4xl">
+    <div class="flex flex-col md:flex-row items-center  md:items-start">
+     <img alt="A school building with a flagpole in front" class="rounded-lg mb-4 md:mb-0 md:mr-6" height="200" src="4c6217bcdd2ff83ad03de05098b47946.jpg" width="300"/>
+     <div class="flex-1">
+      <div class="bg-orange-500 text-white rounded-lg p-4 mb-4">
+       <h2 class="text-xl font-bold mb-2">
+        Kementerian pendidikan
+       </h2>
+       <p>
+        Kementerian Pendidikan adalah lembaga pemerintah yang 
+        bertanggung jawab atas pengelolaan dan pengembangan 
+        sistem pendidikan di suatu negara. Di Indonesia, 
+        lembaga ini dikenal sebagai Kementerian Pendidikan,
+         Kebudayaan, Riset, dan Teknologi (Kemendikbudristek).
+       </p>
+      </div>
+      <div class="bg-orange-500 text-white rounded-lg p-4">
+       <h2 class="text-xl font-bold mb-2">
+      Kementerian pendidikan
+       </h2>
+       <ol class="list-decimal list-inside">
+        <li>
+          Ki Hadjar Dewantara	19 Agustus 1945 – 14 November 1945
+        </li>
+        <li>
+          Dr. Mr. T.S.G. Mulia	14 November 1945 – 12 Maret 1946
+        </li>
+        <li>
+          Ali Sastroamidjojo	2 Oktober 1946 – 27 Juni 1947
+        </li>
+        <li>
+          Dr. Bahder Djohan	6 September 1950 – 27 April 1951
+        </li>
+        <li>
+          Prof. Dr. Prijono	10 Juli 1959 – 6 Maret 1962
+        </li>
+        <li>
+          Dr. Daud Yusuf	29 Maret 1978 – 19 Maret 1983
+        </li>
+        <li>
+          Prof. Dr. Fuad Hassan	19 Maret 1985 – 17 Maret 1993
+        </li>
+        <li>
+          Prof. Dr. Wardiman Djojonegoro	17 Maret 1993 – 16 Maret 1998
+        </li>
+        <li>
+          Prof. Dr. Juwono Sudarsono	23 Mei 1998 – 20 Oktober 1999
+        </li>
+        <li>
+          Dr. Yahya Muhaimin	26 Oktober 1999 – 23 Juli 2001
+        </li>
+        <li>
+          Prof. Dr. Malik Fadjar	10 Agustus 2001 – 20 Oktober 2004
+        </li>
+        <li>
+          Prof. Dr. Bambang Sudibyo	21 Oktober 2004 – 20 Oktober 2009
+        </li>
+        <li>
+          Prof. Dr. Mohammad Nuh	22 Oktober 2009 – 20 Oktober 2014
+        </li>
+        <li>
+          Anies Baswedan	27 Oktober 2014 – 27 Juli 2016
+        </li>
+        <li>
+          Prof. Dr. Muhadjir Effendy	27 Juli 2016 – 20 Oktober 2019
+        </li>
+        <li>
+          Nadiem Anwar Makarim	23 Oktober 2019 – 20 Oktober 2024
+        </li>
+        <li>
+          Abdul Mu'ti	21 Oktober 2024 – sekarang
+        </li>
+        
+       </ol>
+      </div>
+     </div>
+    </div>
+   </div>
+</section>
+<div class="garis-tengah-4">
+  <!-- <span class="teks-tengah">Pendidikan itu apasih???</span> -->
+</div>
+ <!-- Hero Section -->
+ <section id="Dampak">
+ <div class="hero">
+  <div class="hero-overlay">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Berita Digital Pendidikan</h1>
+        <p>Pendidikan Bisa berdampak pada apa aja??</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Categories -->
+ 
+<section class="categories">
+  <div class="container">
+    <div class="grid grid-3">
+      <div class="container-card">
+        <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+        <h3>Akademik</h3>
+        <p>Informasi terkini tentang kebijakan </p>
+      </div>
+      <div class="container-card">
+        <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        <h3>Komunitas</h3>
+        <p>Kegiatan dan prestasi komunitas pendidikan</p>
+      </div>
+      <div class="container-card">
+        <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+          <path d="m23 6-9.5 9.5-5-5L1 18"/>
+          <path d="M17 6h6v6"/>
+        </svg>
+        <h3>Karir</h3>
+        <p>Peluang karir dan pengembangan profesional</p>
+      </div>
+      <div class="container-card">
+        <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+          <path d="m23 6-9.5 9.5-5-5L1 18"/>
+          <path d="M17 6h6v6"/>
+        </svg>
+        <h3>karakter</h3>
+        <p>Membangun karakter</p>
+      </div>
+      <div class="container-card">
+        <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+          <path d="m23 6-9.5 9.5-5-5L1 18"/>
+          <path d="M17 6h6v6"/>
+        </svg>
+        <h3>Akademik</h3>
+        <p>Membantu menciptakan masyarakat yang lebih maju dan harmonis</p>
+      </div>
+      <div class="container-card">
+        <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+          <path d="m23 6-9.5 9.5-5-5L1 18"/>
+          <path d="M17 6h6v6"/>
+        </svg>
+        <h3>norma</h3>
+        <p>Memengaruhi norma, nilai, dan perilaku masyarakat</p>
+      </div>
+    </div>
+  </div>
+</section>
+ </section>
+
+ <section class="cta">
+  <div class="container">
+    <h2>Marilah kita berkontribusi dalam Pendidikan</h2>
+    <p>Untuk memajukan pendidikan Indonesia</p>
+  
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+          <span>Berita Digital</span>
+        </div>
+        <p class="footer-description">
+          Berita Digital adalah tempat untuk mencari informasi atau berita secara online
+      disinin tempat mendapatkan informasi yang terbaik dan terpecaya 
         </p>
       </div>
-
-      <img class="rightHome" src="download (4).jpeg" alt="" />
-    </section>
-
-    <!-- Skills & Education -->
-    <section id="skills">
-      <div class="skills main-container">
-        <h3 class="pre-title">ki Hadjar Dewantara</h3>
-        <h1 class="section-title">biografi</h1>
-
-        <div class="skills-grid">
-          <div class="skills-left">
-            <div class="education">
-              <div class="line">
-                <div></div>
-              </div>
-              <div class="education-info">
-                <h4 class="education-title">Indonesia</h4>
-                <p>Kweek School (Sekolah Guru) di Yogyakarta</p>
-                <!-- <h4 class="education-years">2019 - 2023</h4> -->
-              </div>
-            </div>
-            <div class="education">
-              <div class="line">
-                <div></div>
-              </div>
-              <div class="education-info">
-                <h4 class="education-title">Belanda</h4>
-                <p>Belajar tentang pemikiran-pemikiran baru dalam pendidikan</p>
-                <!-- <h4 class="education-years">2019 - 2023</h4> -->
-              </div>
-            </div>
-            <div class="education">
-              <div class="line">
-                <div></div>
-              </div>
-              <div class="education-info">
-                <h4 class="education-title">jakarta</h4>
-                <p>
-                  School Tot Opleiding Van Indische Artsen (STOVIA), sekolah
-                  kedokteran yang berada di Jakarta
-                </p>
-                <!-- <h4 class="education-years">2019 - 2023</h4> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-right">
-            <p>
-              Ki Hadjar Dewantara adalah tokoh pendidikan Indonesia yang dikenal
-              sebagai Bapak Pendidikan Nasional. Beliau mendirikan Taman Siswa
-              pada tahun 1922, sebuah lembaga pendidikan yang bertujuan
-              memberikan kesempatan belajar bagi rakyat pribumi di masa
-              penjajahan Belanda. Sebelumnya, Ki Hadjar Dewantara aktif sebagai
-              jurnalis dan pejuang kemerdekaan. Ia terkenal dengan tulisan
-              berjudul "Seandainya Aku Seorang Belanda", yang mengkritik
-              pemerintah kolonial. Akibat tulisan tersebut, ia diasingkan ke
-              Belanda bersama dua rekannya dalam Tiga Serangkai (Douwes Dekker
-              dan Tjipto Mangoenkoesoemo).
-            </p>
-          </div>
-        </div>
+      <div>
+        <h4 class="footer-title">Kategori</h4>
+        <ul class="footer-links">
+          <li><a href="#">Pendidikan</a></li>
+          <li><a href="#">sejarah pahlawan pendidikan</a></li>
+        </ul>
       </div>
-    </section>
-    <!-- End Skills & Education  -->
-    <div class="text-center py-10">
-      <div class="flex items-center justify-center">
-        <div class="w-1/4 border-t border-gray-500"></div>
-        <div class="px-4 text-red-600 font-bold">
-          Pahlawan-pahlawan pendidikan
-        </div>
-        <div class="w-1/4 border-t border-gray-500"></div>
+      <div>
+        <h4 class="footer-title">Tautan</h4>
+        <ul class="footer-links">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">sejarah</a></li>
+          <li><a href="#">Dampak</a></li>
+        </ul>
       </div>
+      <div class="text-center mb-4 md:mb-0">
+        <h3 class="text-lg font-bold mb-2">
+         Social Media
+        </h3>
+        <div class="flex justify-center space-x-4">
+         <a class="text-white text-2xl" href="#">
+          <i class="fab fa-facebook">
+          </i>
+         </a>
+         <a class="text-white text-2xl" href="#">
+          <i class="fab fa-instagram">
+          </i>
+         </a>
+         <a class="text-white text-2xl" href="#">
+          <i class="fab fa-youtube">
+          </i>
+         </a>
+        </div>
+       
     </div>
-    <section id="tokoh" class="tokoh">
-      <h2>Tokoh-tokoh pahlawan pendidikan</h2>
-      <div class="container text-center">
-        <div class="row">
-          <div class="card" style="width: 18rem">
-            <botton class="btn-logo">
-            <img src="download (4).jpeg" class="card-img-top" alt="..." />
-          </botton>
-            <div class="card-body">
-              <h5 class="card-title">ki Hadjar Dewantara</h5>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="download.webp" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Raden Ajeng Kartini</h5>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="download (1).webp" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Dewi Sartika</h5>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem">
-            <img
-              src="download (2).webp"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">KH Ahmad Dahlan</h5>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="download (3).webp" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">KH Hasyim Asy'ari</h5>
-             
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-        </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Skills & Education  -->
-    <div class="text-center py-10">
-      <div class="flex items-center justify-center">
-        <div class="w-1/4 border-t border-gray-500"></div>
-        <div class="px-4 text-red-600 font-bold">
-          Pahlawan-pahlawan pendidikan
-        </div>
-        <div class="w-1/4 border-t border-gray-500"></div>
-      </div>
+    <div class="container-footer footer-bottom text-center bg-white-900">
+      <p>&copy; 2025 | Berita Digital.</p>
     </div>
-    
-    <section id="tokoh" class="tokoh">
-      <h2>Tokoh-tokoh pahlawan pendidikan</h2>
-      <div class="container text-center">
-        <div class="row">
-          <div class="card" style="width: 18rem">
-            <botton class="btn-logo">
-            <img src="download (4).jpeg" class="card-img-top" alt="..." />
-          </botton>
-            <div class="card-body">
-              <h5 class="card-title">ki Hadjar Dewantara</h5>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+  </div>
+</footer>
 
-          <div class="card" style="width: 18rem">
-            <img src="download.webp" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Raden Ajeng Kartini</h5>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="download (1).webp" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Dewi Sartika</h5>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem">
-            <img
-              src="download (2).webp"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">KH Ahmad Dahlan</h5>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="download (3).webp" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">KH Hasyim Asy'ari</h5>
-             
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-        </div>
-        </div>
-      </div>
-    </section>
   </body>
 </html>
